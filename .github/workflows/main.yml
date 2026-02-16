@@ -25,7 +25,7 @@ jobs:
         run: pip install -r requirements.txt # Install dependencies for testing
 
       - name: Run unit tests with Pytest
-        run: pytest tests/ # Execute your test suite
+        run: pytest src/tests/ # Execute your test suite
 
       - name: Build Docker image for ML API
         # Build the Docker image, tagging it with the Git commit SHA for versioning
@@ -61,4 +61,5 @@ jobs:
         with:
           name: prediction-examples
           path: predictions/
+
 

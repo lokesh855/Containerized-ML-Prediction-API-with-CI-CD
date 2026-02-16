@@ -57,7 +57,8 @@ jobs:
         # If you have a deployed API, you could curl it here and save the output.
 
       - name: Upload prediction examples as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: prediction-examples
           path: predictions/
+
